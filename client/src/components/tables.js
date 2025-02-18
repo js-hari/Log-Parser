@@ -8,7 +8,7 @@ const TableWithChart = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://log-parser-backend-296i.onrender.com");
+        const response = await fetch("https://log-parser-backend-296i.onrender.com/api/ip-data");
         const data = await response.json();
         setIpData(data);
       } catch (error) {
